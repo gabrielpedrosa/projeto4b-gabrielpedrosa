@@ -7,10 +7,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-        <Button fx:id="button" layoutX="222.0" layoutY="152.0" onAction="#handleButtonAction" text="Click Me!" />
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <JFXButton layoutX="100.0" layoutY="59.0" />
+        <Label fx:id="label" layoutX="174.0" layoutY="210.0" minHeight="16" minWidth="69" />
+      <Label layoutX="67.0" layoutY="120.0" text="Numero 01" />
+      <Label layoutX="67.0" layoutY="173.0" text="Numero 02" />
+      <Label layoutX="67.0" layoutY="219.0" text="Resutado" />
+      <TextField fx:id="txtn1" layoutX="67.0" layoutY="137.0" />
+      <TextField fx:id="txtn2" layoutX="67.0" layoutY="190.0" />
+      <TextField fx:id="txtresult" layoutX="67.0" layoutY="236.0" />
+      <Button fx:id="botsoma" layoutX="268.0" layoutY="137.0" mnemonicParsing="false" onAction="#somar" text="Soma" />
+      <MenuBar prefHeight="25.0" prefWidth="400.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem fx:id="mnalunos" mnemonicParsing="false" onAction="#mnalunos" text="Alunos" />
+                  <MenuItem fx:id="mnfechar" mnemonicParsing="false" onAction="#mnfechar" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
